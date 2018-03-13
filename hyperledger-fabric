@@ -1,0 +1,6 @@
+install： document：http://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html
+
+i used Linux is centos7.4
+prerequest：
+curl，sometimes the Linux system will have it
+docker：you can install it follow this URL：https://github.com/sk77github/software/blob/master/docker
