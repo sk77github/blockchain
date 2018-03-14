@@ -1,6 +1,29 @@
 install： document：http://hyperledger-fabric.readthedocs.io/en/latest/getting_started.html
 
 i used Linux is centos7.4
+
 prerequest：
 curl，sometimes the Linux system will have it
 docker：you can install it follow this URL：https://github.com/sk77github/software/blob/master/docker
+golang: follow this https://github.com/sk77github/language/blob/master/go   or simple yum install go
+node.js and npm : yum install node.js
+
+example:
+git clone -b master https://github.com/hyperledger/fabric-samples.git
+cd fabric-samples
+git checkout {TAG} 
+{TAG} that matches your Fabric version, for example, v1.1.0-rc1. To see a list of all fabric-samples tags, use command “git tag”.
+then:
+curl -sSL https://goo.gl/6wtTN5 | bash -s 1.1.0-rc1  (but in china sometimes it's does not work ,so you can get script code from this url:
+https://github.com/hyperledger/fabric/blob/master/scripts/bootstrap.sh 
+copy the code or download the code ,put it in bootstrap.sh and 
+sudo chmod +x bootstrap.sh 
+./bootstrap.sh
+so when you execute the script file bootstrap.sh,you will extract the platform-specific binaries:
+cryptogen,
+configtxgen,
+configtxlator,
+peer
+orderer and
+fabric-ca-client
+and places them in the bin sub-directory of the current working directory.
