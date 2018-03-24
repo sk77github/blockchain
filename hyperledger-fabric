@@ -27,3 +27,16 @@ peer
 orderer and
 fabric-ca-client
 and places them in the bin sub-directory of the current working directory.
+
+
+
+---------------------------------------------------------------------------------------------
+some trouble shooting:
+
+1,node registerUser.js
+ Store path:/root/hyperledger-fabric/fabric-samples/fabcar/hfc-key-store
+Successfully loaded admin from persistence
+Failed to register: Error: fabric-ca request register failed with errors [[{"code":0,"message":"No identity type provided. Please provide identity type"}]]
+
+https://github.com/hyperledger/fabric-samples/commit/25f6091b86be3e66078102f381c0dc1cbc3fe7f6
+need add role client
